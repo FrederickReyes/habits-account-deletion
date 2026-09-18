@@ -1,1 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta
+        name="description"
+        content="Información sobre cómo eliminar tu cuenta de Habits y los datos asociados."
+    >
+
+    <title>Eliminar cuenta — Habits</title>
+
+    <style>
+        :root {
+            color-scheme: dark;
+
+            --background: #0F1923;
+            --card: #1A2533;
+            --card-secondary: #141F2C;
+            --text: #F8FAFC;
+            --text-secondary: #CBD5E1;
+            --muted: #94A3B8;
+            --border: #334155;
+            --accent: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background:
+                radial-gradient(
+                    circle at top,
+                    rgba(255, 255, 255, 0.04),
+                    transparent 35%
+                ),
+                linear-gradient(
+                    180deg,
+                    #0F1923 0%,
+                    #0B121A 100%
+                );
+
+            color: var(--text);
+            font-family:
+                Inter,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 56px 20px;
+        }
+
+        /* Brand */
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 42px;
+        }
+
+        .logo {
+            width: 46px;
+            height: 46px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: var(--accent);
+            color: var(--background);
+
+            border-radius: 13px;
+
+            font-size: 22px;
+            font-weight: 800;
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        .brand-name {
+            font-size: 23px;
+            font-weight: 700;
+            letter-spacing: -0.4px;
+        }
+
+        /* Card */
+
+        .card {
+            background: rgba(26, 37, 51, 0.96);
+
+            border: 1px solid rgba(148, 163, 184, 0.14);
+
+            border-radius: 22px;
+
+            padding: 36px;
+
+            box-shadow:
+                0 24px 70px rgba(0, 0, 0, 0.25);
+        }
+
+        .eyebrow {
+            color: var(--muted);
+
+            font-size: 14px;
+            font-weight: 600;
+
+            margin-bottom: 8px;
+        }
+
+        h1 {
+            margin: 0 0 12px;
+
+            font-size: 32px;
+            line-height: 1.2;
+
+            letter-spacing: -0.7px;
+        }
+
+        h2 {
+            margin: 32px 0 10px;
+
+            font-size: 19px;
+            line-height: 1.35;
+        }
+
+        p {
+            margin: 9px 0;
+
+            color: var(--text-secondary);
+
+            font-size: 15px;
+        }
+
+        ol {
+            margin: 14px 0 0;
+
+            padding-left: 24px;
+
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin: 9px 0;
+            padding-left: 4px;
+        }
+
+        strong {
+            color: var(--text);
+        }
+
+        /* Information box */
+
+        .info-box {
+            margin-top: 28px;
+
+            padding: 18px 20px;
+
+            background: var(--card-secondary);
+
+            border: 1px solid var(--border);
+
+            border-radius: 15px;
+
+            color: var(--text-secondary);
+
+            font-size: 14px;
+        }
+
+        .info-title {
+            display: block;
+
+            margin-bottom: 5px;
+
+            color: var(--text);
+
+            font-weight: 700;
+        }
+
+        /* Footer */
+
+        .footer {
+            margin-top: 28px;
+
+            text-align: center;
+
+            color: #64748B;
+
+            font-size: 13px;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 560px) {
+            .container {
+                padding: 32px 15px;
+            }
+
+            .brand {
+                margin-bottom: 30px;
+            }
+
+            .card {
+                padding: 25px 22px;
+
+                border-radius: 18px;
+            }
+
+            h1 {
+                font-size: 27px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            p,
+            li {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- Brand -->
+
+        <header class="brand">
+            <div class="logo">H</div>
+
+            <div class="brand-name">
+                Habits
+            </div>
+        </header>
+
+
+        <!-- Main content -->
+
+        <section class="card">
+
+            <div class="eyebrow">
+                Account deletion
+            </div>
+
+            <h1>
+                Delete your Habits account
+            </h1>
+
+            <p>
+                You can permanently delete your Habits account and
+                the personal data associated with it directly from
+                the Habits app.
+            </p>
+
+
+            <!-- Steps -->
+
+            <h2>
+                How to delete your account
+            </h2>
+
+            <ol>
+                <li>
+                    Open the <strong>Habits</strong> app.
+                </li>
+
+                <li>
+                    Sign in to your account.
+                </li>
+
+                <li>
+                    Open your <strong>Profile</strong> or account settings.
+                </li>
+
+                <li>
+                    Select <strong>Delete Account</strong>.
+                </li>
+
+                <li>
+                    Follow the confirmation steps shown in the app.
+                </li>
+            </ol>
+
+
+            <!-- What gets deleted -->
+
+            <h2>
+                What happens when you delete your account?
+            </h2>
+
+            <p>
+                Habits will delete your account and the personal
+                data associated with it from its active systems
+                as part of the account deletion process.
+            </p>
+
+            <p>
+                This may include your account information and the
+                habit, progress, and profile data associated with
+                your account.
+            </p>
+
+
+            <!-- Data retention -->
+
+            <h2>
+                Data retention
+            </h2>
+
+            <p>
+                Habits does not intend to retain your personal
+                account data after a completed account deletion
+                request, except where retention is required or
+                permitted by applicable law, security requirements,
+                fraud prevention, dispute resolution, or other
+                legitimate legal obligations.
+            </p>
+
+            <p>
+                Where information must be retained for one of these
+                reasons, it will be retained only for the period
+                necessary for that purpose and handled according
+                to applicable requirements.
+            </p>
+
+
+            <!-- Help -->
+
+            <div class="info-box">
+
+                <span class="info-title">
+                    Need help?
+                </span>
+
+                If you cannot access your account or cannot
+                complete the deletion process in the app,
+                contact the Habits support team through the
+                support contact provided in the app.
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+
+        <footer class="footer">
+            © 2026 Habits · Account deletion
+        </footer>
+
+    </main>
+
+</body>
+</html>
